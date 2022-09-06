@@ -19,9 +19,11 @@ const Category = () => {
         <h3>Search by Category</h3>
       </div>
 
-      {icons.map((icon) => (
-        <Card key={icon.id} img={icon.imgURL} name={icon.name} />
-      ))}
+      <div className="card-parent">
+        {icons.map((icon) => (
+          <Card key={icon.id} img={icon.imgURL} name={icon.name} />
+        ))}
+      </div>
     </div>
   );
 };
